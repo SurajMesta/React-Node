@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://bootswatch.com/3/cosmo/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.js"
+  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+  crossorigin="anonymous"></script>
+</head>
+
+<style>
+     .first{
+       position: relative;
+     }
+
+     .first:hover .tooltiptext{
+       visibility: visible;
+     }
+
+     .tooltiptext{
+       position: absolute;
+       width: 160px;
+       background-color: #1f4068;
+      
+       padding: 5px;
+       text-align: center;
+       top: 65px;
+       right: -55px;
+       border-radius: 10px;
+       z-index: 1;
+       visibility: hidden;
+     }
+
+     .tooltiptext p{
+      color: cornsilk;
+     
+    
+
+     }
+
+     .tooltiptext::before{
+       content: '';
+      border-width: 5px ;
+      border-style: solid;
+      border-color: transparent transparent #007892 transparent;
+      position: absolute;
+      top: -10px;
+      right: 75px;
+      z-index: 1;
+     }
+
+
+     .second-div{
+      
+       width: 100%;
+       height: 100%;
+       margin-top: 0px;
+
+     }
+
+     .foot-ul{
+       padding-top: 5px;
+       padding-bottom: 5px;
+     }
+
+     .foot-ul li{
+       display: inline-block;
+       padding: 3px;
+       margin: 0px 5px;
+     }
+
+     .foot-ul li:hover{
+
+       background-color:crimson
+    
+     }
+
+
+
+
+
+
+     @media (min-width:0px) and (max-width:767px){
+      .tooltiptext{
+       position: absolute;
+       width: 150px;
+       background-color: #1f4068;
+      
+       padding: 5px;
+       text-align: center;
+       top: 2px;
+       left: 105px;
+       border-radius: 10px;
+       z-index: 1;
+       visibility: hidden;
+    
+       visibility: hidden;
+     }
+
+     .tooltiptext p{
+      color: cornsilk;
+     
+    
+
+     }
+
+     .tooltiptext::before{
+       content: '';
+      border-width: 5px ;
+      border-style: solid;
+      border-color: transparent  #007892 transparent transparent ;
+      position: absolute;
+      top: 30px;
+      right: 150px;
+      z-index: 1;
+     }
+
+
+     }
+
+     @media (min-width:768px) and (max-width:992px){
+      .tooltiptext{
+       position: absolute;
+       width: 160px;
+       background-color: #1f4068;
+      
+       padding: 5px;
+       text-align: center;
+       top: 65px;
+       right: -55px;
+       border-radius: 10px;
+       z-index: 1;
+       visibility: hidden;
+     }
+
+     .tooltiptext p{
+      color: cornsilk;
+     
+    
+
+     }
+
+     .tooltiptext::before{
+       content: '';
+      border-width: 5px ;
+      border-style: solid;
+      border-color: transparent transparent #007892 transparent;
+      position: absolute;
+      top: -10px;
+      right: 75px;
+      z-index: 1;
+     }
+
+
+     }
+
+   
+
+
+</style>
+<body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand" title="ReactJs"><i class="fab fa-react fa-2x"></i></a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myDiv">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+
+      <div class="navbar-collapse collapse" id="myDiv">
+      
+
+        <ul class="nav navbar-nav navbar-right">
+         
+          <li class="first"><a href="#" ><i class="fas fa-user fa-2x"></i></a>
+          <span class="tooltiptext">
+            <p><em>Welcome...</em></p>
+            <p>Status:<em>Logged-In</em></p>
+            
+          </span>
+          
+          </li>
+          <li><a href="#" title="This Project is Built Using Reactjs and NodeJs"><i class="fas fa-2x fa-question-circle"></i>About</a></li>
+          <li><a href="mailto:darshanmesta33@gmail.com" title="contact-Me"><i class="fa-2x fas fa-at"></i>Contact</a></li>
+          <li><a title="LogOut" href="/logout"><i class="fas fa-sign-out-alt fa-2x"></i>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+ 
+ 
+    <div class="second-div">
+      <iframe src="https://mystifying-easley-6408d0.netlify.app/" frameborder="0" style="width: 100%;height: 1000px;"></iframe>
+      
+    </div>
+
+
+    <footer class="text-center" style="width:100%; background-color:#1f4068">
+      <ul class="foot-ul">
+        <li>
+          <span> <a title="Facebook" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-1.8x" style="color:aliceblue"></i></a></span>
+        </li>
+        <li>
+          <span> <a title="Twitter" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-1.8x " style="color: aliceblue;"></i></a></span>
+        </li>
+        <li>
+          <span><a title="Instagram" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-1.8x " style="color: aliceblue;"></i></a></span>
+        </li>
+
+        <li><span><a title="Email" href="mailto:darshanmesta33@gmail.com"><i class="fas fa-envelope fa-1.8x" style="color: aliceblue;"></i></a></span></li>
+      </ul>
+    </footer>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+ 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+
+    <style>
+      body{
+          background: url('https://images.unsplash.com/photo-1545893835-abaa50cbe628?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI2MzczfQ&auto=format&fit=crop&w=873&q=80');
+          background-repeat:no-repeat;
+          background-size: 100%;
+          background-attachment: fixed;
+      }
+
+      .card{
+        
+         text-align: center;
+         margin-top: 15%;
+         
+     
+         background-color: #434e52;
+      }
+
+
+    .welcome{
+        text-align: center;
+        margin: auto;
+    }
+ 
+     @media (min-width:0px) and (max-width:768px){
+        body{
+          background: url('https://images.unsplash.com/photo-1545893835-abaa50cbe628?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI2MzczfQ&auto=format&fit=crop&w=873&q=80');
+          background-repeat:no-repeat;
+          background-size:cover;
+          background-position: center;
+          background-attachment: fixed;
+      }
+           .card{
+               width:80%;
+               height: 70%;
+               overflow: auto;
+               margin-top: 40%;
+               margin-left: 10%;
+              
+               margin-right: 10%;
+            
+               
+           }
+
+           #scrollable-text{
+               font-size: 0.5rem;
+           }
+     }
+
+     @media(min-width:769px) and (max-width:992px){
+
+        .card{
+               width:110%;
+               margin: auto;
+           }
+
+     }
+    
+    </style>
+    </head>
+    <body>
+  
+  
+    <div class="container">
+       
+        <div class="row" >
+           <div class="col-md-4 "></div>
+            <div class="col-md-4  col-xs-12 "  >
+                    <div class="card ">
+                        <%- include('./partials/messages.ejs'); %>
+                        <div class="card-body" >
+                            <div class="text-center " >
+                                <span  ><i class="fab fa-node-js fa-4x text-center"  style='color:#d4f3ef;margin-bottom: 15px;'></i></span>
+                                <p class="text-center" style="color: snow;"><em> Don't Have an Account?</em></p>
+        
+                            <a href="/register" class="btn btn-md btn-block btn-primary">Register</a>
+                            <p class="text-center" style="color: snow;"> <em> Already Have an Account?</em></p>
+                            <a href="/login" class="btn btn-md btn-block btn-success">Login</a>
+                            </div>
+                        </div>
+                     
+                    </div>
+                   
+               
+                
+       
+             
+        </div>
+        <div class="col-md-4 "></div>
+
+        
+      
+
+    </div>
+    </div>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    </html>

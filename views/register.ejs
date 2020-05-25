@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link
+    rel="stylesheet"
+    href="https://bootswatch.com/3/cosmo/bootstrap.min.css"
+    type="text/css"
+  /> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+  
+  <link rel="stylesheet" href="
+  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+
+
+  <style>
+      body{
+          background: url('https://hdwallsource.com/img/2014/1/best-backgrounds-18901-19389-hd-wallpapers.jpg');
+          background-repeat: no-repeat;
+          background-size:cover;
+          background-attachment: fixed;
+         
+       
+         
+        
+      }
+
+      .card{
+          /* background-color: #af8baf; */
+          background-color: #434e52;
+          margin-top: 10px;
+      }
+
+      #scroll-text{
+          font-size: 1.3rem;
+          color:#fff;
+      }
+
+      .lab{
+          color:snow;
+       
+      }
+
+      .links{
+          
+          color: snow;
+          text-decoration: none;
+      }
+
+      .links:hover{
+          color: yellow;
+          text-decoration: none;
+      }
+
+    
+
+      @media(min-width: 768px) and (max-width: 992px){
+
+          /* .body{
+            background: url('https://lh3.googleusercontent.com/proxy/yfwaubxJfL6uxQcskVZr3LRd3Fdjm7_GisSn-MUybD521lMv1K2HiGXsTlmVEhfsQlxLh4fR53LACkDdad5TRzVEn61KxPwz2Q5UzYdOQ8OGsEGkkQUJHjGOGyT4nzpTW-sPV1_uOk4U4Ad6VLXd0_PGYsSAmrCq');
+            background-repeat: repeat;
+            background-position: 100%;
+            background-size: 100%;
+           
+
+          } */
+
+
+          .card{
+              width: 150%;
+              margin: auto;
+              margin-top: 10%;
+              
+              
+          }
+      }
+
+      @media(min-width: 0px) and (max-width: 768px){
+
+        /* .card{
+              width: 80%;
+              margin: auto;
+              margin-top: 5%;
+              text-align: center;
+              height: 60%;
+              overflow: auto;
+
+              
+          } */
+
+          .card{
+               width:50%;
+               height: 60%;
+               overflow: auto;
+               
+           
+               margin: 20% 20%;
+             
+           }
+
+            /* .body{
+            background: url('https://lh3.googleusercontent.com/proxy/yfwaubxJfL6uxQcskVZr3LRd3Fdjm7_GisSn-MUybD521lMv1K2HiGXsTlmVEhfsQlxLh4fR53LACkDdad5TRzVEn61KxPwz2Q5UzYdOQ8OGsEGkkQUJHjGOGyT4nzpTW-sPV1_uOk4U4Ad6VLXd0_PGYsSAmrCq');
+            background-repeat: repeat;
+            background-position: center;
+            background-size: cover;
+     
+           
+
+          } */
+
+        
+         
+
+      }
+
+
+      @media (max-width: 1024px){
+          .card{
+              width: 100%;
+              margin: auto;
+              margin-top: 50%;
+          }
+      }
+
+
+  
+
+
+    
+  </style>
+</head>
+
+<body>
+  
+  
+
+     
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 "></div>
+            <div class="col-md-4   col-xs-12">
+                 
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/register" class="form1" method="POST">
+                            <%- include ('./partials/messages.ejs'); %>
+                            <div class="text-center">
+                                <span ><i  class="fab fa-node fa-4x" style="color:#81f5ff;"></i></span>
+                            </div>
+        
+                        <div class="form-group  ">
+                            <label for="" class="lab" >Name:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user-edit"></i></span>
+                                </div>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name" required autofocus  value="<%= typeof name != 'undefined' ? name : '' %>"/>
+                            </div>
+                        
+                               
+                           
+                           
+                        </div>
+        
+                        <div class="form-group">
+                            <label class="lab" for="">Email:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="someone@example.com" required autofocus value="<%= typeof email != 'undefined' ? email : '' %>"/>
+                            </div>
+                         
+                        </div>
+        
+                        <div class="form-group">
+                            <label class="lab" for="">Password:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" id="password" name="password"  maxlength=15  class="form-control" placeholder="Password" required autofocus value="<%= typeof password != 'undefined' ? password : '' %>"/>
+                                 
+                                
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-eye-slash fa-eye" id="eye1" ></i></span>
+                                   </div>
+                            </div>
+                          
+                           
+                        </div>
+        
+                        <div class="form-group">
+                            <label class="lab" for="">Confirm Password:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key" id="key2"></i></i></span>
+                                </div>
+                                <input type="password" id="password2" name="password2" maxlength=15 class="form-control" placeholder="Confirm Password" required autofocus  value="<%= typeof password2 != 'undefined' ? password2 : '' %>"/>
+
+
+                                <div class="input-group-append">
+                                 <span class="input-group-text"><i class="fas fa-eye-slash fa-eye" id="eye2" ></i></span>
+                                </div>
+                            </div>
+                          
+                           
+                        </div>
+        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-success">Register</button>
+                        </div>
+                        <div class="form-group">
+                            <p style="color: whitesmoke;"><em>Already Have an Account? </em><a class="links" href="/login">Login</a> &nbsp; <a class="links" href="/">Return Home</a></p>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-md-4 "></div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+  <script>
+      $(document).ready(function(){
+    $('#eye1').click(function(){
+        $('#eye1').toggleClass(' fa-eye-slash')
+      
+
+        var d1= $('#password')
+
+        if(d1.attr('type')=='password'){
+            d1.attr('type','text')
+
+        }
+        else{
+            d1.attr('type','password')
+        }
+    })
+
+    $('#eye2').click(function(){
+      $('#eye2').toggleClass('  fa-eye-slash')
+     
+
+        var d2= $('#password2')
+
+        if(d2.attr('type')=='password'){
+            d2.attr('type','text')
+        }
+
+        else{
+            d2.attr('type','password')
+        }
+    })
+
+    
+    
+
+
+
+
+})
+  </script>
+  
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
